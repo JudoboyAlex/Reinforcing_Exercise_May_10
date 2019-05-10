@@ -14,6 +14,6 @@ venues = [
 recommended_venues= []
 
 for place in venues:
-    if place['wheelchair_accessible'] == True and place['capacity'] >= 150:
+    if place['wheelchair_accessible'] == True and place['city'] == "Toronto" and place['capacity'] >= 150:
         recommended_venues.append(place)
 print(recommended_venues)
